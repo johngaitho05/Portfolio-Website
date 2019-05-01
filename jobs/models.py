@@ -7,6 +7,6 @@ class Job(models.Model):
     description = models.CharField()
     languages= models.CharField(max_length=200)
     github_link = models.CharField()
-    
+
 
 

@@ -1,7 +1,7 @@
 body{
     color:#344037;
     margin-top: 20px;
-    background-color: #517fa4;
+    background-color: cadetblue;
 }
 #logo{
     font-family: 'El Messiri', sans-serif;
@@ -11,7 +11,13 @@ body{
     padding-left: 30%;
 }
 .nav-link{
-    margin-right: 20px;;font-family: cursive;font-size: 14px;color: #330033;
+    margin-right: 20px;font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+/*font-family: 'Poiret One', cursive;*/
+/*font-family: 'Crete Round', serif;*/
+}
+.nav-item:hover{
+    text-shadow: 0 4px #330033;
 }
 .mediaicons a{
     padding-left: 10px;
@@ -63,7 +69,18 @@ h3 a{
 .container{
     background-color: #009933;
     background-repeat:no-repeat;
-    background: url(../img/images.jpg) 
+    background: url(../img/background.jpg)
 }
-
+#message{
+    margin-bottom: 20px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: mediumorchid;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link:hover{
+    text-shadow: none;
+}
+#details{
+    padding-left: 30px;
+    }
 

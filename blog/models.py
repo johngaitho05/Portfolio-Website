@@ -8,3 +8,11 @@ class Blog(models.Model):
     pub_date = models.DateField(("Date"), default=django.utils.timezone.now)
     image = models.ImageField(upload_to='images/')
     body = models.TextField()
+
+    def summary(self):
+        return self.body[:500]
+
+    def __str__(self):
+        return self.title
+
+

@@ -1,7 +1,9 @@
 body{
-    color:#344037;
+    color: black;
     margin-top: 20px;
     background-color: cadetblue;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 20px;
 }
 #logo{
     font-family: 'El Messiri', sans-serif;

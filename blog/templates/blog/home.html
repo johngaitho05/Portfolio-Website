@@ -1,26 +1,26 @@
 
 {% extends 'blog/base.html' %}
 {% block body %}
-       <br/>
-      <h2 class="text-center">Welcome to my Blog</h2>
+<br/>
+<h2 class="text-center">Welcome to my Blog</h2>
+<br/>
+{% for blog in blogs %}
+<div class="row">
+    <div class="col-md-3">
+        <img src="{{ blog.image.url }}" height="200px" width="100%" class="img-responsive" style="margin-top:8px;"/>
+    </div>
+    <div class="col-md-6" id="summary">
+        <h3>{{ blog.title }}</h3>
         <br/>
-            {% for blog in blogs %}
-      <div class="row">
-          <div class="col-md-3">
-             <img src="{{ blog.image.url }}" height="200px" width="100%" class="img-responsive" style="margin-top:8px;"/>
-          </div>
-      <div class="col-md-6" id="summary">
-          <h3>{{ blog.title }}</h3>
-          <br/>
-            <p>{{ blog.summary }}</p>
-          </div>
+        <p>{{ blog.summary }}</p>
+    </div>
 
-      <div class="col-md-3">
-         {{ blog.pub_date }}
-          </div>
-          </div>
-                <br/>
-          <br/>
-           {% endfor %}
-        <hr class=""/>
+    <div class="col-md-3">
+        {{ blog.pub_date }}
+    </div>
+</div>
+<br/>
+<br/>
+{% endfor %}
+<hr class=""/>
 {% endblock %}

@@ -18,7 +18,7 @@
     </head>
     <body>
         <div class="container">
-             <header>
+            <header>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <a class="navbar-brand" id="logo" href="{% url 'homepage' %}">John Gaitho</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,14 +42,14 @@
                     </div>
 
                 </nav>
-             </header>
+            </header>
             {% block body %}
             {% endblock %}
             <footer class="text-muted">
-          <div class="container text-center">
-              <p>© John Gaitho {% now "Y" %}</p>
-          </div>
-        </footer>
+                <div class="container text-center">
+                    <p>© John Gaitho {% now "Y" %}</p>
+                </div>
+            </footer>
         </div>
     </body>
 </html>

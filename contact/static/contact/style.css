@@ -1,11 +1,10 @@
 body{
-    color: rgb(34, 34, 34);
+    color:#555555;
     margin-top: 20px;
     background-color: #555555;
-    font-family: "Gotham SSm", Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
+    line-height: 2.2;
 }
-
 #logo{
     font-family: 'El Messiri', sans-serif;
     font-size: 26px;
@@ -16,8 +15,6 @@ body{
 .nav-link{
     margin-right: 20px;font-size: 14px;
     font-family: 'Nunito', sans-serif;
-/*font-family: 'Poiret One', cursive;*/
-/*font-family: 'Crete Round', serif;*/
 }
 .nav-item:hover{
     text-shadow: 0 4px #330033;
@@ -41,19 +38,12 @@ body{
     color: #bb0000;
 }
 #profile{
-    height:100%;
-    width:100%;
+    border-radius: 50%;
+    height:250px;
+    width:250px;
 }
 .row{
     margin-top: 30px;
-}
-#bio{
-    margin-top: 40px; margin-left: 0;padding-left: 0;
-}
-#details{
-   margin-top:40px;
-   font-family: 'Playball', cursive;
-   font-size: 40px;
 }
 footer{
     margin-top: 2px;
@@ -61,13 +51,10 @@ footer{
     padding-bottom: 20px;
 }
 
-h3 a{
-    color:#330033;
-}
 .container{
     background-color: #009933;
     background-repeat:no-repeat;
-    background: url(../img/background.jpg)
+    background: url(../contact/background.jpg)
 }
 #message{
     margin-bottom: 20px;
@@ -78,20 +65,58 @@ h3 a{
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link:hover{
     text-shadow: none;
 }
-#details{
-    padding-left: 30px;
-    }
+.well {
+    min-height: 20px;
+    padding: 0 10px 10px 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    background-color: #d4d4d5;
+}
+.email{
+    background-color: silver;
+    padding:5px;
+    font-size: 17px;
+    width:250px;
+}
 
-.modal{
-   font-family:"Lucida Sans",cursive;
-    font-size: 12px;
-
+footer{
+    margin-top: 50px;
+}
+hr {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: ridge;
+  border-width: 1px;
 }
 #star{
-    font-size:25px;
+    font-size:10px;
     padding-left: 10px;
     color: #cc1111;
 }
-.btn-default{
-  background-color:#e4e4e4;
+#submitbutton{
+    width:100%; height:50px; font-size: 16px;
+}
+.glyphicon{
+    padding-right: 20px;
+}
+#contactinfo{
+    padding-top:30px;
+    padding-left: 0;
+}
+
+#inputfname, #inputlname{
+    height: 50px;
+}
+#inputfname, #inputlname,#message{
+    font-family: "Times New Roman", sans-serif;
+    font-size: 17px;
+    border-radius: 8px;
+}
+.card{
+        width: 270px;
+    height:300px;
+}
+.cont-item{
+    padding-left: 20px;
 }

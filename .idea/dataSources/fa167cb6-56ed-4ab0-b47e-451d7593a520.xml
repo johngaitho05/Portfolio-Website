@@ -16,17 +16,17 @@
       <IntrospectionStateNumber>519</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
-      <Relations>sequence|table|24577|24579|1
+      <Relations>sequence|table|24702|24704|1
+sequence|table|24737|24739|1
+sequence|table|24748|24750|1
+sequence|table|24634|24636|1
+sequence|table|24642|24644|1
+sequence|table|24577|24579|1
 sequence|table|24588|24590|1
 sequence|table|24598|24600|1
 sequence|table|24606|24608|1
 sequence|table|24616|24618|1
 sequence|table|24624|24626|1
-sequence|table|24634|24636|1
-sequence|table|24642|24644|1
-sequence|table|24702|24704|1
-sequence|table|24737|24739|1
-sequence|table|24748|24750|1
 </Relations>
     </database>
     <database id="4" parent="1" name="postgres">

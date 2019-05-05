@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'jobs.apps.JobsConfig',
     'blog.apps.BlogConfig',
+    'contact.apps.ContactConfig',
+
 ]
 
 MIDDLEWARE = [
@@ -59,6 +61,8 @@ TEMPLATES = [
         'DIRS': [os.path.join(BASE_DIR,'templates'),
                  os.path.join(BASE_DIR,'jobs/templates',),
                  os.path.join(BASE_DIR,'blog/templates',),
+                 os.path.join(BASE_DIR,'contact/templates',),
+
                  ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -128,6 +132,7 @@ USE_TZ = True
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'jportfolio/static'),
                     os.path.join(BASE_DIR, 'jobs/static'),
                     os.path.join(BASE_DIR, 'blog/static'),
+                    os.path.join(BASE_DIR, 'contact/static'),
                     ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')

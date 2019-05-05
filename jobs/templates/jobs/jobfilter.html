@@ -1,16 +1,15 @@
 {% extends 'jobs/base.html' %}
 {% block body %}
 <br/>
-<h2 class="text-center">My projects</h2>
-    <div class="row">
+<h2 class="text-center">{{ page_title }}</h2>
+<div class="row">
     {% for job in jobs %}
     <div class="col-lg-4 col-md-6">
         <div class="card mb-4 shadow-sm">
             <img src="{{ job.image.url }}" height="200px" class="img-responsive"/>
             <div class="card-body">
-                <h4><u>{{ job.title }}</u></h4>
+                <h4>{{ job.title }}</h4>
                 <p class="card-text">{{ job.summary }}...<a href="#">Read on</a></p>
-                 <br/>
                 <div class="text-center">
                 <ul>
                    {% for language in job.langs %}
@@ -26,4 +25,3 @@
 </div>
 
 {% endblock %}
-<!

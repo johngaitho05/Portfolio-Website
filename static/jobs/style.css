@@ -1,10 +1,10 @@
 body{
     color:#344037;
     margin-top: 20px;
-    background-color: #555555;
+    background-color: #0ef508;
 }
 #logo{
-    font-family: 'El Messiri', sans-serif;
+    font-family: corbel,'El Messiri', sans-serif;
     font-size: 26px;
 }
 .navlinks{
@@ -48,17 +48,9 @@ footer{
     margin-bottom: 0;
     padding-bottom: 20px;
 }
-
-h3 a{
-    color:#330033;
-}
 .container{
-    background-color: #009933;
     background-repeat:no-repeat;
     background: url(../jobs/background.jpg)
-}
-#message{
-    margin-bottom: 20px;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
     color: mediumorchid;
@@ -66,12 +58,20 @@ h3 a{
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link:hover{
     text-shadow: none;
 }
-#details{
-    padding-left: 30px;
-    }
 .card{
    min-height: 500px;
+    padding-bottom: 0;
 }
-form{
-    margin-top: 10px;
+li{
+    display:inline; list-style-type: circle;
+    font-family: Tahoma,Arial, sans-serif;
+}
+li:not(:last-child):after{
+  content: ",";
+}
+li:nth-child(1):before{
+  content: ">>";
+}
+ul{
+    padding-left: 0;
 }

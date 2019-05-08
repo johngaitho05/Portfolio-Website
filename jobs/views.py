@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,get_object_or_404
 from .models import Job
 
 
@@ -36,3 +36,6 @@ def javascriptjobs(request):
     page_title = 'JavaScript Projects'
     jobs = Job.objects.filter(languages__contains='Script')
     return render(request, 'jobs/jobfilter.html', {'page_title':page_title, 'jobs':jobs})
+
+def details(request, job_id):
+    job = get_object_or_404()

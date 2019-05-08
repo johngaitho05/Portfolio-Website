@@ -8,9 +8,7 @@
     </div>
     <div class="col-md-6 col-sm-8">
         <div id="bio" class="text-center">
-            <p>Hi, I'm John Gaitho, currently a BBIT Student at
-                <a href="https://www.pacuniversity.ac.ke/">PAC University</a> in Nairobi-Kenya.Along with that, a I am a professional
-                web developer(both front and back end). I use use either django or php for back end.Lately I have been working as a freelancer since 2017. </p>
+            <p>{{ bio }}</p>
         </div>
     </div>
     <div class="col-md-3" id="details">
@@ -50,6 +48,7 @@
 <div class="modal-dialog modal-lg">
     <div class="modal-content">
         <div class="modal-header">
+            <span id="confirmation" style="color:lawngreen"></span>
             <h4 class="modal-title">Fill all the fields then click send</h4>
             <button class="close" data-dismiss="modal">&times;</button>
         </div>
@@ -110,7 +109,7 @@ function validateall(){
 
     if(validatemail() && name!="" && email != "" && message!=""){
      form1 = document.forms["messageform"];
-     alert("Message sent, John will get back to you as soon as possible");
+     alert("Message sent, John will get back to you soon");
      form1.submit();
     }else if(validatemail() && name=="" || email == "" || message==""){
         alert("All fields are reqiured");

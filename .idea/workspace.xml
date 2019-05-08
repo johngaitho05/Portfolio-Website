@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91bdaa6e-b393-4fc0-a460-e9118906a72c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="91bdaa6e-b393-4fc0-a460-e9118906a72c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jportfolio/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="88" column="26" lean-forward="true" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
+            <state relative-caret-position="581">
+              <caret line="148" column="8" lean-forward="true" selection-start-line="148" selection-start-column="8" selection-end-line="148" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -116,7 +114,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jportfolio/static/css/homepage.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -171,7 +169,6 @@
         <option value="$PROJECT_DIR$/contact/urls.py" />
         <option value="$PROJECT_DIR$/contact/views.py" />
         <option value="$PROJECT_DIR$/contact/templates/contact/home.html" />
-        <option value="$PROJECT_DIR$/jportfolio/settings.py" />
         <option value="$PROJECT_DIR$/jportfolio/views.py" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/jobs/templates/jobs/details.html" />
@@ -180,6 +177,7 @@
         <option value="$PROJECT_DIR$/jobs/static/jobs/style.css" />
         <option value="$PROJECT_DIR$/contact/static/contact/style.css" />
         <option value="$PROJECT_DIR$/jportfolio/static/css/homepage.css" />
+        <option value="$PROJECT_DIR$/jportfolio/settings.py" />
       </list>
     </option>
   </component>
@@ -203,24 +201,6 @@
             <path>
               <item name="myportfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="myportfolio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myportfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myportfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="jportfolio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myportfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myportfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="jportfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myportfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myportfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="jportfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -322,17 +302,17 @@
       <workItem from="1557230504218" duration="4531000" />
       <workItem from="1557236285656" duration="1036000" />
       <workItem from="1557237613927" duration="619000" />
-      <workItem from="1557293551058" duration="5997000" />
+      <workItem from="1557293551058" duration="6754000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157877000" />
+    <option name="totallyTimeSpent" value="158634000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24810892" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24810892" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" />
@@ -344,7 +324,7 @@
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.49924356" visible="true" weight="0.031096563" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49924356" visible="true" weight="0.031096563" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" weight="0.1898527" />
       <window_info anchor="bottom" id="Python Console" order="12" />
@@ -632,13 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jportfolio/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="88" column="26" lean-forward="true" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/static/blog/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -664,6 +637,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jportfolio/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="148" column="8" lean-forward="true" selection-start-line="148" selection-start-column="8" selection-end-line="148" selection-end-column="8" />
         </state>
       </provider>
     </entry>

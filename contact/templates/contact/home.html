@@ -1,13 +1,5 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
-{#{% block bootstrap %}#}
-{#        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">#}
-{#        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >#}
-{#        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>#}
-{#        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>#}
-{#        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>#}
-{#        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>#}
-{#{% endblock %}#}
 {% block static%}
     {% static  'contact/style.css' %}
 {% endblock %}
@@ -86,12 +78,10 @@ function validateall(){
 
     if(validatemail() && name!="" && email != "" && message!=""){
      form1 = document.forms["messageform"];
-     alert("Message successfully sent. John will get back to you soon using the email you have provided.");
+     alert("Message sent successfully.");
      form1.submit();
     }else if(validatemail() && name=="" || email == "" || message==""){
-        alert("All fields are reqiured");
-    }else{
-        alert("Invalid email address!");
+        alert("Plesae fill in all the requred fields");
     }
 }
     </script>

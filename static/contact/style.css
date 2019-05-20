@@ -1,9 +1,6 @@
 body{
-    color:#555555;
     margin-top: 20px;
     background-color: #0b2b40;
-    font-size: 15px;
-    line-height: 2.2;
 }
 #logo{
     font-family: 'El Messiri', sans-serif;
@@ -29,9 +26,9 @@ body{
     height:250px;
     width:250px;
 }
-.mediaicons{
-    line-height: 25px;
-}
+/*.mediaicons{*/
+    /*line-height: 20px;*/
+/*}*/
 .row{
     margin-top: 30px;
 }
@@ -80,11 +77,11 @@ footer{
 }
 #contactinfo{
     padding-top:30px;
-    /*padding-left: 0;*/
 }
 #contact_infomation{
-    color:blue;
+    color: #198bf1;
     font-size: 16px;
+    font-family: 'Arial Black',Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 #inputfname, #inputlname{
@@ -111,7 +108,7 @@ border:none;
 }
 
 #nav-container{
-    background:#ffd800;
+    background:#f9d772;
 }
 .navbar-default{
     background-color: #0b2b40;
@@ -120,14 +117,10 @@ border:none;
 .nav-item:hover{
     text-shadow: 0 4px #330033;
 }
-.mediaicons a{
-    padding-left: 10px;
-    font-size: 17px;
-}
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus{
-    color: #ff6209;
+    color: #0b0651;
     background: none;
 }
 #nav-item a {
@@ -136,6 +129,10 @@ border:none;
     }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form{
     border-color: #ffd800;
+}
+.mediaicons a{
+    font-size: 16px;
+    padding-right: 25px;
 }
 
 @media (min-width: 768px) {
@@ -163,20 +160,15 @@ border:none;
 }
 @media (max-width: 768px) {
 #navlist{
-    width: 40%;
+    width: 30%;
     float:left;
     display:block;
 }
     .mediaicons{
-        width: 40%;
+        width: 70%;
         float:right;
         margin-right:0;
+        text-align: right;
 
-    }
-}
-@media (max-width: 576px) {
-    .mediaicons a {
-        display: block;
-        padding-top:5px;
     }
 }

@@ -12,10 +12,15 @@
 {% endblock %}
 {% block body %}
 <br/>
-<h2 class="text-center">Welcome to my Blog</h2>
 <br/>
-{% for blog in blogs %}
-<div class="row">
+<div class="row" id="blog_page">
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('#blog_page').css('height', window.innerHeight-180);
+    });
+</script>
+ {% if blogs %}
+    {% for blog in blogs %}
     <div class="col-md-3">
         <img src="{{ blog.image.url }}" height="200px" width="100%" class="img-responsive" style="margin-top:8px;"/>
     </div>
@@ -28,7 +33,14 @@
     <div class="col-md-3">
         {{ blog.pub_date }}
     </div>
-</div>
 <br/>
 {% endfor %}
+        {% else %}
+     <div class="col-md-4 col-md-offset-4">
+     <div  style="margin-top: 30%;">
+        <h2 class="text-center" style="font-family:'Bitstream Vera Sans Mono',cursive">No blog yet</h2>
+        </div>
+     </div>
+    {% endif %}
+</div>
 {% endblock %}

@@ -1,5 +1,4 @@
 body{
-    color:#344037;
     margin-top: 20px;
     background-color: #0b2b40;
 }
@@ -9,9 +8,6 @@ body{
 }
 .nav-item:hover{
     text-shadow: 0 4px #330033;
-}
-.mediaicons a{
-    padding-left: 10px;
 }
 .fa-facebook{
     color: #3b5998;
@@ -65,7 +61,7 @@ footer{
 
 
 #nav-container{
-    background:#ffd800;
+    background:#f9d772
 }
 .navbar-default{
     background-color: #0b2b40;
@@ -74,14 +70,10 @@ footer{
 .nav-item:hover{
     text-shadow: 0 4px #330033;
 }
-.mediaicons a{
-    padding-left: 10px;
-    font-size: 17px;
-}
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus{
-    color: #ff6209;
+    color: #0b0651;
     background: none;
 }
 #nav-item a {
@@ -89,9 +81,12 @@ footer{
         font-family: 'Crete Round', serif;
     }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-    border-color: #ffd800;
+    border-color: #f9d772
 }
-
+.mediaicons a{
+    font-size: 16px;
+    padding-right: 25px;
+}
 @media (min-width: 768px) {
 
     .nav > li > a {
@@ -117,21 +112,16 @@ footer{
 }
 @media (max-width: 768px) {
 #navlist{
-    width: 40%;
+    width: 30%;
     float:left;
     display:block;
 }
     .mediaicons{
-        width: 40%;
+        width: 60%;
         float:right;
         margin-right:0;
+        text-align: right;
 
-    }
-}
-@media (max-width: 576px) {
-    .mediaicons a {
-        display: block;
-        padding-top:5px;
     }
 }
 

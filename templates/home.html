@@ -16,8 +16,8 @@
         </div>
     </div>
     <div class="col-md-3" id="details">
-        <h4><a href="{% static 'css/resume.pdf' %}">See my CV</a></h4>
-        <h4><a href="mailto:johngaitho05@gmail.com">Email me</a></h4>
+        <h4><a id="quick-link" href="{% static 'css/resume.pdf' %}">See my CV</a></h4>
+        <h4 ><a id="quick-link" href="mailto:johngaitho05@gmail.com">Email me</a></h4>
     </div>
 </div>
 <br/>
@@ -114,12 +114,9 @@ function validateall(){
     if(validatemail() && name!="" && email != "" && message!=""){
      form1 = document.forms["messageform"];
      form1.submit();
-     alert("Message successfully sent. John will get back to you soon using the email you have provided.");
+     alert("Message sent successfully.");
     }else if(validatemail() && name=="" || email == "" || message==""){
-        alert("All fields are reqiured");
-    }else{
-        alert("Invalid email address!");
-    }
+        alert("Please fill in all the required fields.");
 }
 
 $("#validate").on("click", validate)

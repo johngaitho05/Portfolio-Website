@@ -37,5 +37,9 @@ def javascriptjobs(request):
     jobs = Job.objects.filter(languages__contains='Script')
     return render(request, 'jobs/jobfilter.html', {'page_title':page_title, 'jobs':jobs})
 
-def details(request, job_id):
-    job = get_object_or_404()
+
+def jobdetails(request, job_id):
+    job = get_object_or_404(Job, pk=job_id)
+    return render(request, 'jobs/details.html', {'job':job})
+
+

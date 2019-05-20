@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block static %}
+    {% static  'blog/style.css' %}
+{% endblock %}
+{% block navlinks %}
+        <li id="nav-item"><a href="{% url 'homepage' %}">HOME</a></li>
+        <li id="nav-item"><a  href="{% url 'alljobs' %}">WORK</a></li>
+        <li id="nav-item" class="active"><a  href="{% url 'allblogs' %}">BLOG</a></li>
+        <li id="nav-item"><a href="{% url 'contactpage' %}">CONTACT</a></li>
+{% endblock %}
+{% block body %}
+    <br/>
+    <h2 style="padding-bottom: 10px">{{ blog.title }}</h2>
+    <img src="{{ blog.image.url }}" class="img-fluid img-responsive" id="blogimg"/>
+    <p style="margin-top: 20px;" class="blog_description">{{ blog.body }}</p>
+{% endblock %}

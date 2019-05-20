@@ -1,4 +1,8 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
+{% block static %}
+    {% static  'css/homepage.css' %}
+{% endblock %}
 {% block body %}
 {% load staticfiles %}
 <div class="row">
@@ -8,12 +12,12 @@
     </div>
     <div class="col-md-6 col-sm-8">
         <div id="bio" class="text-center">
-            <p>{{ bio }}</p>
+            <p>Hi, my name is John Gaitho, a freelancer software developer from Nairobi,Kenya with 3+ years of experience. I make websites and desktop apps using Python(Django) and Java respectively. I am passionate to coding and ready to work under pressure to have the deadline met. I value my clients and i will involve you during the entire development process to ensure that what you get is exactly what you wanted. Feel free to contact me at anytime, any day for enquiries or concern</p>
         </div>
     </div>
     <div class="col-md-3" id="details">
-        <h5><a href="{% static 'css/resume.pdf' %}">See my CV</a></h5>
-        <h5><a href="mailto:johngaitho05@gmail.com">Email me</a></h5>
+        <h4><a href="{% static 'css/resume.pdf' %}">See my CV</a></h4>
+        <h4><a href="mailto:johngaitho05@gmail.com">Email me</a></h4>
     </div>
 </div>
 <br/>
@@ -38,6 +42,7 @@
     <div class="col-md-6">
         <h3>View my work</h3>
         <ul>
+            <li><a href="{% url 'alljobs' %}">All</a></li>
             <li><a href="{% url 'pythonjobs' %}">Python</a></li>
             <li><a href="{% url 'phpjobs' %}">Php</a></li>
             <li><a href="{% url 'vbjobs' %}">Visual Basic</a></li>
@@ -49,7 +54,7 @@
     <div class="modal-content">
         <div class="modal-header">
             <span id="confirmation" style="color:lawngreen"></span>
-            <h4 class="modal-title">Fill all the fields then click send</h4>
+            <h4 class="modal-title">Send Message</h4>
             <button class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
@@ -81,7 +86,6 @@
 </div>
     </div>
 </div>
-    <hr class="bg-dark"/>
     <script type="text/javascript">
 
           function validateEmail(email) {
@@ -109,8 +113,8 @@ function validateall(){
 
     if(validatemail() && name!="" && email != "" && message!=""){
      form1 = document.forms["messageform"];
-     alert("Message sent, John will get back to you soon");
      form1.submit();
+     alert("Message successfully sent. John will get back to you soon using the email you have provided.");
     }else if(validatemail() && name=="" || email == "" || message==""){
         alert("All fields are reqiured");
     }else{

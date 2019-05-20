@@ -1,19 +1,30 @@
-{% extends 'jobs/base.html' %}
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block static %}
+    {% static  'jobs/style.css' %}
+{% endblock %}
+{% block navlinks %}
+<li id="nav-item"><a href="{% url 'homepage' %}">HOME</a></li>
+<li id="nav-item" class="active"><a  href="{% url 'alljobs' %}">WORK</a></li></li>
+<li id="nav-item"><a  href="{% url 'allblogs' %}">BLOG</a></li>
+<li id="nav-item"><a href="{% url 'contactpage' %}">CONTACT</a></li>
+{% endblock %}
 {% block body %}
 <br/>
 <h2 class="text-center">{{ page_title }}</h2>
-<div class="row">
+    <div class="row">
     {% for job in jobs %}
-    <div class="col-lg-4 col-md-6">
-        <div class="card mb-4 shadow-sm">
-            <img src="{{ job.image.url }}" height="200px" class="img-responsive"/>
-            <div class="card-body">
+    <div class="col-md-4 col-sm-6">
+        <div class="well" style="background-color: white; padding: 0">
+            <a href="{% url 'jobdetails' job.id %}"><img src="{{ job.image.url }}" height="225" width="100%" class="img-fluid" alt="project image"/></a>
+            <div style="padding:20px;">
                 <h4>{{ job.title }}</h4>
-                <p class="card-text">{{ job.summary }}...<a href="#">Read on</a></p>
+                <p class="card-text" style="text-align: justify">{{ job.summary }}...<a href="{% url 'jobdetails' job.id %}">Continue</a></p>
+                 <br/>
                 <div class="text-center">
-                <ul>
+                <ul id="languages_list">
                    {% for language in job.langs %}
-                    <li>{{ language }}</li>
+                    <li id="languages">{{ language }}</li>
                     {% endfor %}
                 </ul>
                 <small class="text-muted"><a href="{{ job.github_link }}">Github link</a></small>

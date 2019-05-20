@@ -10,5 +10,6 @@ urlpatterns =[
     path('java/',views.javajobs, name='javajobs'),
     path('javascript/',views.javascriptjobs, name='javascriptjobs'),
     path('vb/',views.vbjobs, name='vbjobs'),
+    path('<int:job_id>/',views.jobdetails, name='jobdetails'),
 
 ]

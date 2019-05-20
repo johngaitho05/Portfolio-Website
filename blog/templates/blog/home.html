@@ -1,5 +1,15 @@
 
-{% extends 'blog/base.html' %}
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block static %}
+    {% static  'blog/style.css' %}
+{% endblock %}
+{% block navlinks %}
+        <li id="nav-item"><a href="{% url 'homepage' %}">HOME</a></li>
+        <li id="nav-item"><a  href="{% url 'alljobs' %}">WORK</a></li>
+        <li id="nav-item" class="active"><a  href="{% url 'allblogs' %}">BLOG</a></li>
+        <li id="nav-item"><a href="{% url 'contactpage' %}">CONTACT</a></li>
+{% endblock %}
 {% block body %}
 <br/>
 <h2 class="text-center">Welcome to my Blog</h2>
@@ -12,7 +22,7 @@
     <div class="col-md-6" id="summary">
         <h3>{{ blog.title }}</h3>
         <br/>
-        <p>{{ blog.summary }}...<a href="#">Continue</a></p>
+        <p>{{ blog.summary }}...<a href="{% url 'blogdetails' blog.id%}">Read on</a></p>
     </div>
 
     <div class="col-md-3">
@@ -20,7 +30,5 @@
     </div>
 </div>
 <br/>
-
 {% endfor %}
-    <hr class=""/>
 {% endblock %}

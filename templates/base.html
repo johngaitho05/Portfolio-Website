@@ -2,54 +2,133 @@
 <!doctype html>
 <html lang="en">
     <head>
-        {% load staticfiles %}
+{#        {% load staticfiles %}#}
         <title>John Gaitho</title>
-         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+       {% block bootstrap %}
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-        <link href="{% static 'css/homepage.css' %}" rel="stylesheet">
+       {% endblock %}
+        <link href="{% block static%}{% endblock %}" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Crete+Round|Nunito:700|Poiret+One" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=El+Messiri" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arapey|Arimo|Crimson+Text&display=swap" rel="stylesheet">
+
     </head>
     <body>
-        <div class="container">
-             <header>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container" id="nav-container">
                     <a class="navbar-brand" id="logo" href="{% url 'homepage' %}">John Gaitho</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
-                        <div class="navbar-nav navlinks">
-                            <a class="nav-item nav-link active" href="{% url 'homepage' %}">HOME<span class="sr-only">(current)</span></a>
-                            <a class="nav-item nav-link " href="{% url 'alljobs' %}">WORK</a>
-                            <a class="nav-item nav-link " href="{% url 'allblogs' %}">BLOG</a>
-                            <a class="nav-item nav-link" href="{% url 'contactpage' %}">CONTACT</a>
-                        </div>
-                        <div  class="mediaicons navbar-nav ml-auto">
-                            <a href="mailto:johngaitho05@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                            <a href="https://www.linkedin.com/in/john-gaitho-547b9812b/"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://web.facebook.com/johng.yk"><i class="fab fa-facebook"></i></a>
-                            <a href="https://twitter.com/JohnNjo26623496"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/john_yk001/"><i class="fab fa-instagram"></i></a>
-
-                        </div>
-                    </div>
-
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+                   <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" id="navlist">
+                    {% block navlinks %}
+                    <li id="nav-item" class="active"><a href="{% url 'homepage' %}">HOME</a></li>
+                    <li id="nav-item"><a  href="{% url 'alljobs' %}">WORK</a></li></li>
+                    <li id="nav-item"><a  href="{% url 'allblogs' %}">BLOG</a></li>
+                    <li id="nav-item"><a href="{% url 'contactpage' %}">CONTACT</a></li>
+                    {% endblock %}
+                </ul >
+                <div class="nav navbar-nav navbar-right mediaicons">
+                    <a href="mailto:johngaitho05@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/john-gaitho-547b9812b/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://web.facebook.com/johng.yk"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/JohnNjo26623496"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/john_yk001/"><i class="fab fa-instagram"></i></a>
+                </div>
+         </div>
+                 </div>
                 </nav>
-             </header>
+        <div class="container">
             {% block body %}
             {% endblock %}
             <footer class="text-muted">
-          <div class="container text-center">
-              <p>© John Gaitho {% now "Y" %}</p>
+          <div class="text-center" style="padding:0; margin:0">
+              <hr style="width:100%; border:.5px solid grey"/>
+              <p>© John Gaitho ({% now "Y" %})</p>
           </div>
         </footer>
         </div>
+       <script type="text/javascript">
+           $(document).ready(function(){
+            $('.fa-envelope').tooltip({
+                placement:'bottom',
+                title:"</small>email</small>",
+                animation:"false",
+                html:true
+            });
+            $('.fa-facebook').tooltip({
+                placement:'bottom',
+                title:"</small>facebook</small>",
+                animation:"false",
+                html:true
+            });
+            $('.fa-twitter').tooltip({
+                placement:'bottom',
+                title:"</small>twitter</small>",
+                animation:"false",
+                html:true
+            });
+            $('.fa-linkedin').tooltip({
+                placement:'bottom',
+                title:"</small>linkedin</small>",
+                animation:"false",
+                html:true
+            });
+            $('.fa-instagram').tooltip({
+                placement:'bottom',
+                title:"</small>instagram</small>",
+                animation:"false",
+                html:true
+            });
+            });
+       </script>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+{#             <header  style="background-color: #ffd800;">#}
+{#                <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">#}
+{#                    <a class="navbar-brand" id="logo" href="{% url 'homepage' %}">John Gaitho</a>#}
+{#                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">#}
+{#                        <span class="navbar-toggler-icon"></span>#}
+{#                    </button>#}
+{#                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >#}
+{#                        <ul class="breadcrumb ">#}
+{#                            {% block navlinks %}#}
+{#                            <li class="breadcrumb-item active"><a href="{% url 'homepage' %}">HOME</a></li>#}
+{#                             <li class="breadcrumb-item"><a  href="{% url 'alljobs' %}">WORK</a></li>#}
+{#                             <li class="breadcrumb-item"><a  href="{% url 'allblogs' %}">BLOG</a></li>#}
+{#                             <li class="breadcrumb-item"><a  href="{% url 'contactpage' %}">CONTACT</a></li>#}
+{#                            {% endblock %}#}
+{#                        </ul>#}
+{#                        <div  class="mediaicons navbar-nav ml-auto">#}
+{#                            <a href="mailto:johngaitho05@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>#}
+{#                            <a href="https://www.linkedin.com/in/john-gaitho-547b9812b/"><i class="fab fa-linkedin"></i></a>#}
+{#                            <a href="https://web.facebook.com/johng.yk"><i class="fab fa-facebook"></i></a>#}
+{#                            <a href="https://twitter.com/JohnNjo26623496"><i class="fab fa-twitter"></i></a>#}
+{#                            <a href="https://www.instagram.com/john_yk001/"><i class="fab fa-instagram"></i></a>#}
+{##}
+{#                        </div>#}
+{#                    </div>#}
+{##}
+{#                </nav>#}
+{#             </header>#}

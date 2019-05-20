@@ -1,26 +1,13 @@
 body{
     color:#555555;
     margin-top: 20px;
-    background-color: #0ef508;
+    background-color: #0b2b40;
     font-size: 15px;
     line-height: 2.2;
 }
 #logo{
     font-family: 'El Messiri', sans-serif;
     font-size: 26px;
-}
-.navlinks{
-    padding-left: 30%;
-}
-.nav-link{
-    margin-right: 20px;font-size: 14px;
-    font-family: 'Nunito', sans-serif;
-}
-.nav-item:hover{
-    text-shadow: 0 4px #330033;
-}
-.mediaicons a{
-    padding-left: 10px;
 }
 .fa-facebook{
     color: #3b5998;
@@ -42,6 +29,9 @@ body{
     height:250px;
     width:250px;
 }
+.mediaicons{
+    line-height: 25px;
+}
 .row{
     margin-top: 30px;
 }
@@ -56,16 +46,11 @@ footer{
     background-repeat:no-repeat;
     background: url(../contact/background.jpg)
 }
-#message{
-    margin-bottom: 20px;
+#messageDiv{
+    margin-top: 50px;
 }
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
-    color: mediumorchid;
-}
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link:hover{
-    text-shadow: none;
-}
-.well {
+
+#message_well {
     min-height: 20px;
     padding: 0 10px 10px 10px;
     margin-bottom: 5px;
@@ -82,13 +67,6 @@ footer{
 footer{
     margin-top: 50px;
 }
-hr {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: ridge;
-  border-width: 1px;
-}
 #star{
     font-size:10px;
     padding-left: 10px;
@@ -102,7 +80,11 @@ hr {
 }
 #contactinfo{
     padding-top:30px;
-    padding-left: 0;
+    /*padding-left: 0;*/
+}
+#contact_infomation{
+    color:blue;
+    font-size: 16px;
 }
 
 #inputfname, #inputlname{
@@ -112,11 +94,6 @@ hr {
     font-family: "Times New Roman", sans-serif;
     font-size: 17px;
     border-radius: 8px;
-}
-.card{
-    padding-top: 50px;
-        width: 300px;
-    height:300px;
 }
 .cont-item{
     padding-left: 20px;
@@ -131,4 +108,75 @@ hr {
     border-width:0px;
 border:none;
     background-color:#F8F9FA;
+}
+
+#nav-container{
+    background:#ffd800;
+}
+.navbar-default{
+    background-color: #0b2b40;
+    border: none;
+}
+.nav-item:hover{
+    text-shadow: 0 4px #330033;
+}
+.mediaicons a{
+    padding-left: 10px;
+    font-size: 17px;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{
+    color: #ff6209;
+    background: none;
+}
+#nav-item a {
+        font-size: 14px;
+        font-family: 'Crete Round', serif;
+    }
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border-color: #ffd800;
+}
+
+@media (min-width: 768px) {
+
+    .nav > li > a {
+        padding: 15px 0;
+    }
+    #navlist li > a:before {
+        content: "|";
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    #navlist li:nth-child(1) > a:before {
+        content: "";
+        padding-left: 0;
+    }
+    #navlist{
+        margin-left: 25%;
+    }
+    .mediaicons{
+    margin-right: 20px;
+    padding-top: 15px;
+}
+}
+@media (max-width: 768px) {
+#navlist{
+    width: 40%;
+    float:left;
+    display:block;
+}
+    .mediaicons{
+        width: 40%;
+        float:right;
+        margin-right:0;
+
+    }
+}
+@media (max-width: 576px) {
+    .mediaicons a {
+        display: block;
+        padding-top:5px;
+    }
 }

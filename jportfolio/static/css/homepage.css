@@ -149,8 +149,9 @@ h3 a{
 
 @media (max-width: 567px) {
     #msgModal{
-        width:100%;
-        padding-left: 0%;
+        width:95%;
+        padding:0;
+
     }
 }
 
@@ -165,6 +166,10 @@ h3 a{
 
 .close{
     color: red;
+}
+
+#msgModal{
+    font-family: Helvetica, "Times New Roman",sans-serif ;
 }
 
 

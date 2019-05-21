@@ -21,7 +21,7 @@ def phpjobs(request):
 
 def javajobs(request):
     page_title='Java Projects'
-    jobs = Job.objects.filter(languages= 'Java')
+    jobs = Job.objects.filter(languages__contains='Java,')
 
     return render(request, 'jobs/jobfilter.html', {'page_title':page_title, 'jobs':jobs})
 

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import Message
 
 def contactpage(request):
@@ -14,13 +14,13 @@ def savemessage(request):
         new_message= Message(name=name, email=email,message=message)
         new_message.save()
         if page == "home":
-            return render(request, 'home.html')
+            return redirect('homepage')
 
         else:
-            return render(request, 'contact/home.html')
+            return redirect('contactpage')
 
     else:
-        return render(request, 'home.html')
+        return redirect('contactpage')
 
 
 

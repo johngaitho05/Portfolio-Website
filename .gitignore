@@ -12,4 +12,6 @@ db.sqlite3
 /static
 Pipfile
 Pipfile.lock
+.idea/workspace.xml
+
 

@@ -4,7 +4,6 @@ body{
 #body{
     font-family: "Gotham SSm", Helvetica, Arial, sans-serif;
     margin-top: 20px;
-    font-size: 18px;
 }
 #logo{
     font-family: 'El Messiri', sans-serif;
@@ -99,6 +98,9 @@ h3 a{
 }
 
 @media (min-width: 768px) {
+    body{
+        font-size: 18px;
+    }
     .nav > li > a {
         padding: 15px 0;
     }
@@ -124,6 +126,9 @@ h3 a{
     }
 }
 @media (max-width: 768px) {
+    body{
+        font-size: 15px;
+    }
 #navlist{
     width: 30%;
     float:left;
@@ -149,9 +154,21 @@ h3 a{
 
 @media (max-width: 567px) {
     #msgModal{
-        width:100%;
-        padding-left: 0%;
+        width:95%;
+        padding:0;
+
     }
+    body{
+        font-family: "Arial Narrow", sans-serif;
+        font-size: 14px;
+    }
+    #bio{
+        text-align: justify;
+    }
+    #message{
+        margin-top: 0;
+    }
+
 }
 
 #msgModal .modal-header{
@@ -167,5 +184,14 @@ h3 a{
     color: red;
 }
 
+/*#msgModal{*/
+    /*font-family: Helvetica, "Times New Roman",sans-serif ;*/
+/*}*/
 
+#cont-header{
+        margin-top: 0;
+    }
+#additional_info{
+        margin-top: 0;
+    }
 
